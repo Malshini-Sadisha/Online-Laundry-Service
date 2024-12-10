@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*header*/
+.header {
+    background-color: #71F091;
+    color: white;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header img {
+    padding-top: 10px;
+    height: 100px;
+    width: auto;
+}
+
+.header button {
+    background-color: rgb(38, 38, 50);
+    color: white;
+    border: none;
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+
+.header button:hover {
+    background-color: #a8a5a5;
+    color: rgb(38, 38, 50);
+}  
+
+.header .img1 {
+    height: 40px;
+    width:40px;
+    margin-left: 50px;
+}
+
+.nav .img1{
+    padding: 0;
+    margin: 0 0 0 1em;
+    
+}
+
+/*main image*/
+.container {
+    position: relative;
+    width: 100%;
+  }
+
+/*Order now button*/  
+.container .btn {
+    position:absolute;
+    top: 90%;
+    left: 15%;
+    transform: translate(-80%, -25%);
+    -ms-transform: translate(-80%, -25%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 24px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;   
+    width: 200px;
+    height: 50px; 
+  }
+  
+.container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+/*Our Services*/
+.services{
+    display:flex;
+    width: 100%;
+}
+
+.services h1{
+    padding: 0 0 0 1em;
+    font-size: 50px;
+    font-weight:900;
+}
+
+.icons{
+    margin: 10em 5em 5em -10em;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.row .sp{
+    padding: 0em -5em 5em -1em;
+}
+
+.row td {
+    padding: 0em -5em 5em -1em;
+}
+
+#des{
+    margin: 0em 0em -4em 0em;
+    text-align:center; 
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #270355;
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+
+}
+
+#washing, #mending, #deliver, #press, #dry, #oneDay{
+    cursor: pointer;
+}
+
+/*Outlets page*/
+.outlets h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight:bold;
+    color: #270355;
+}
+
+.loc{
+    text-align: center;
+    margin: 5em;
+    display: flex ;
+    width: 80%;    
+}
+
+.r1, .r2, .r3{
+    display: block;
+}
+
+.loc img{
+    width: 50%;
+}
+
+.loc h4{
+    font-size: 24px;
+}
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact img{
+    display: block;
+    margin: 0em 0em 0em 45em;
+}
+
+.contactInfo{
+    display: block;
+    margin: 0em 10em 0em 0em;
+}
+
+.contact .m1{
+    padding: 0em 0em 1em 0em;
+}
+
+.contactInfo p{
+    margin: 0.5em 0em 1em 1em;
+}
+
+.contactInfo .p1{
+    padding: 0em 0em .5em 0em;
+}

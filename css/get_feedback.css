@@ -1,0 +1,40 @@
+/* CSS for get_contacts.php */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card p {
+    margin: 0;
+  }
+  
+  .contact-card a {
+    color: red;
+    margin-left: 10px;
+    text-decoration: none;
+    
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .no-contacts {
+    font-size: 18px;
+    color: #999;
+  }
+  

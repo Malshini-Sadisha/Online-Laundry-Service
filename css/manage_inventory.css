@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*background image code*/
+body{
+    display: flex;/*body will be displayed as a flexible container*/
+    justify-content: center;/*horizontally centers the flex items*/
+    align-items: center;/*vertically centers the flex items*/
+    min-height: 100vh;/*sets the minimum height of the body to 100%of the viewport*/
+    background: url("C:/xampp/htdocs/home page/images/back_image.jpg") no-repeat;/*background image*/
+    background-size: 2600px;/*sets background size to 2600px*/
+    background-position: center;/*Positions the background image at the center of the backgroound*/
+}
+/*header code*/
+header{
+    position:fixed;/*sets the heaeder to a fixed position*/
+    top: -3%;/*positions the header 3% above its normal position*/
+    bottom: 420px;/*positions the header 420 pixels from the bottom*/
+    left: 0;
+     width: 100%;
+    padding: -3px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+/*navigation logo code*/
+.nav.logo{
+    width: 80px;
+}
+/*navigation bar first tags code*/
+.navigation a {
+    position: relative;
+    font-size: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 25px;
+}
+/*underlined bar transition time code*/
+.navigation a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+/*underlined bar length code*/
+.navigation a:hover::after{
+    transform:scaleX(1);
+}
+/*login border Code*/
+.navigation .btnLogin-popup{ 
+    width: 150px;
+   height: 60px;
+    background:transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;  
+}
+/*popup code*/
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color:#162938;
+    font-size: 25px;
+}
+table{
+    bottom: 5px;
+    border-collapse: collapse;
+    width: 75%;
+    height: 3px;
+}
+th,td{
+    font-size: 10px;
+    color: #000;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}
+th{
+    background-color: #162938;
+}
+footer{
+    position: fixed;
+    bottom: 3%;
+    top: 85%;
+    width: 100%;
+    padding: 85px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #043750;
+    color: #fbfefb;
+    background-position: bottom;
+}
+.para1{
+    font-size: 10px;
+    font-family: sans-serif;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+.para2{
+    font-size: 13px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 40%;
+}
+.facebook{
+    position: absolute;
+    right: 130px;
+    top: 51px;
+}
+.twitter 
+{
+    position: absolute;
+    right: 90px;
+    top: 51px;
+}
+    
+.instagram 
+{
+    position: absolute;
+    right: 50px;
+    top: 51px;
+}
+    
+.youtube 
+{
+    position: absolute;
+    right: 10px;
+    top: 51px;
+}
+
+.google-play 
+{
+    position: absolute;
+    right: 210px;
+    top: 51px;
+}
+    
+.app-store 
+{
+    position: absolute;
+    right: 170px;
+    top: 51px;
+}

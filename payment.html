@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="css\payment.css">
+        
+
+        <script src="payment.js"></script>
+
+        <!--js link-->
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/lightslider.js"></script>
+        <!-- Fav icon -->
+        <link rel="shortcut icon" href="images/fav icon.png">
+        <!-- Using Font Awesome -->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header class="header">
+        
+            <img src="images\LOGO1.png" alt="Laundry Land">
+        
+        <div class="nav">
+            <a href="Home.html">
+                <button>Home</button>
+            </a>
+            <a href="aboutUs.html">
+                <button>About Us</button>
+            </a>
+            <a href="contact.html">
+                <button>Contact Us</button>
+            </a>    
+            <a href="logout.php">
+                <button>Log out</button>
+            </a>
+            
+           
+            <a href="userProfile.php">
+                <img class="img1" src="images\user1.png" alt="Profile">
+            </a>
+        </div>
+        </header>
+
+
+    <!--Payment Code-->
+    <div class="rec1">
+        <h2>Payment method</h2>
+    </div>
+
+        <div class="rec2">
+            
+            <form onsubmit="return validateForm()" action="payment.php" method="POST">
+                <!--card number-->
+                <div class="form-row">
+                    <label for="card-number">Card Number </label>
+                    <input type="text" name="cardNumber"   placeholder="**** **** **** ****" maxlength="16">
+                </div>
+            
+                <div class="form-row">
+                    <!--Expiry-->
+                    <label>Expiry</label>
+                    <input type="text" name="Month" id="Month" maxlength="2" class="textbox" placeholder="MM">
+                    
+                    <input type="text" name="Year" id="Year" maxlength="2" class="textbox" placeholder="YY">
+                </div>
+
+                <div class="form-row">
+                    <!--cardholder name-->
+                    <label>Cardholder Name </label>
+                    <input class="textbox" type="text" id="Cardholder-name" name="Cardholder-name" placeholder="Name">
+                </div>
+
+                <div class="form-row">
+                    <!--CVV-->
+                    <label>CVV</label>
+                    <input class="textbox" type="password" id="CVV" name="CVV" placeholder="***" maxlength="3">
+                    <span class="password-toggle" onclick="togglePasswordVisibility()"></span>
+                </div>
+
+                <div class="image">
+                <!--CVV-->
+                <div class="image-gallery">
+                    <img class="visa" src="https://cdn.freebiesupply.com/logos/large/2x/visa-2-logo-png-transparent.png" alt="Image 1">
+                    <img class="mastercard" src="https://th.bing.com/th/id/OIP.8hSdZiAvNki23CzVyAvSLQHaEK?pid=ImgDet&rs=1" alt="Image 2">
+                    <img class="paypal" src="https://th.bing.com/th/id/R.bd1419f2f730ef7ba64126743e0e391e?rik=uzFTmd6DoZgPdQ&riu=http%3a%2f%2flogok.org%2fwp-content%2fuploads%2f2014%2f05%2fPayPal-logo-20071.png&ehk=Lv0x8oYjHOwb0iyN03M6R%2fR6uaDne%2bj853%2b9DKrXFe8%3d&risl=&pid=ImgRaw&r=0" alt="Image 3">
+                    <img class="american_express" src="https://th.bing.com/th/id/OIP.V0duj2DHUhxVJ4LEb2FodgHaEF?pid=ImgDet&rs=1" alt="image 4">
+                </div>
+                <button type="submit">Pay Now</button></br>
+                <button type="reset">Cancel</button>
+
+            </form>
+        </div>
+    </div>    
+    <hr>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="social">
+                <img src="images/fb.png" width="70px">
+                <img src="images/insta.png" width="70px">
+                <img src="images/whtsapp.png" width="70px">
+            </div>
+            <div class="contact">
+                <img class="m1" src="images/phone.png" width="30px">
+                <img class="m2" src="images/mail.png" width="30px">
+
+            </div>
+            <div class="contactInfo">
+                <P class="p1">0112 555 555</P>
+                <p class="p2">laundryland@gmail.com</p>
+            </div>  
+        </footer>
+    </body>
+</html>

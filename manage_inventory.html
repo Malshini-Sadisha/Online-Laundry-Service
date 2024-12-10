@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manage Inventory</title>
+        <link rel="stylesheet" href="css/manage_inventory.css">
+
+    </head>
+    <body>
+        <!--header open-->
+        <header>
+         <!--LOGO image-->
+            <img src="images/LOGO1.png" class="logo">
+            <!--Navigation bar open -->
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Basket</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <!--Button for the login-->
+                <button class="btnLogin-popup">LogIn</button>
+                </nav>
+                <!--Navigation bar close-->
+        </header>
+        <form action="manage_inventory.php" method="post">
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Detergent Bottles</td>
+                <td><input type= "text" name="Detergent_Bottles" min="0"></td>
+            </tr>
+            <tr>
+                <td>Fabric Softner</td>
+                <td><input type="number" name="Fabric_Softner" min="0"></td>
+            </tr>
+            <tr>
+                <td>Stain Remover Bottles</td>
+                <td><input type="number" name="Stain_Remover_Bottles" min="0"></td>
+            </tr>
+            <tr>
+                <td>Bleach Bottles</td>
+                <td><input type="number" name="Bleach_Bottles" min="0"></td>
+            </tr>
+            <tr>
+                <td>Laundry Bags</td>
+                <td><input type="number" name="Laundry_Bags" min="0"></td>
+            </tr>
+            <tr>
+                <td>Dryer Sheet packets</td>
+                <td><input type="number" name="Dryer_Sheet_Packets" min="0"></td>
+            </tr>
+            <tr>
+                <td>Lint Rollers</td>
+                <td><input type="number" name="Lint_Rollers" min="0"></td>
+            </tr>
+            <tr>
+                <td>Ironing Accessories</td>
+                <td><input type="number" name="Ironing_Accessories" min="0"></td>
+            </tr>
+            <tr>
+                <td>Washing Machines</td>
+                <td><input type="number" name="Washing_Machines" min="0"></td>
+            </tr>
+        </table>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+        <!--footer-->
+        <footer>
+            <div class="para1">
+                <p><h2>Laundry Land</h2></p>
+                <p><h2>Kaduwela Rd, Malabe</h2></p>
+                <p><h2>Tel:0741255460/0324567890</h2></p>
+            </div>
+           <div class="para2">
+                <p><h2></h2>Laundry Land.com © All Rights Reserved</h2></p>
+           </div>
+            <a href="https://www.facebook.com/login/">
+                <img class="facebook" src="images/facebook.png" height="33" width="33" alt="facebook">
+            </a>
+            <a href="https://www.twitter.com/login/">
+                <img class="twitter" src="images/twitter.png" height="33" width="33" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/login/">
+                <img class="instagram" src="images/instagram.png" height="33" width="33" alt="instagram">
+            </a>
+            <a href="https://www.youtube.com/login/">
+                <img class="youtube" src="images/youtube.png" height="33" width="33" alt="youtube">
+            </a>
+            <a href="https://play.google.com/store/movies?hl=en&tab=w8" >
+                <img class="google-play" src="images/google-play.png" height="33" width="33" alt="google-play">
+            </a>
+            <a href="https://www.apple.com/app-store/">
+                <img class="app-store" src="images/app-store.png" height="33" width="33" alt="app-store">
+            </a>
+        </footer>
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

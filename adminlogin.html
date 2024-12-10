@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Login</title>
+        <link rel="stylesheet" href="css/admin_login.css">
+
+    </head>
+    <body>
+        <!--header open-->
+        <header>
+         <!--LOGO image-->
+            <img src="images/LOGO1.png" class="logo">
+            <!--Navigation bar open -->
+            <nav class="navigation">
+                <a href="Home.html">Home</a>
+                <a href="#">Basket</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="aboutUs.html">About Us</a>
+                <!--Button for the login-->
+                <button class="btnLogin-popup">LogIn</button>
+                </nav>
+                <!--Navigation bar close-->
+        </header>
+
+        <!--wrapper for admin login-->
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <!--admin login-->
+                <h1>Admin Log In</h1> 
+                <form  method="POST">
+                    <!--input box for mail and pasword-->
+                    <div class="input-box">
+                        <input type="text" name="username">
+                        <label>User Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="text" name="password">
+                        <label>Password</label>
+                    </div>
+                
+                    <button type="submit" class="btn">Login</button></button>
+                </form>
+            </div>
+            
+        </div>
+        
+        <!--footer-->
+        <footer>
+            <div class="para1">
+                <p><h2>Laundry Land</h2></p>
+                <p><h2>Kaduwela Rd, Malabe</h2></p>
+                <p><h2>0112 555 555</h2></p>
+            </div>
+           <div class="para2">
+                <p><h2></h2>Laundry Land.com © All Rights Reserved</h2></p>
+           </div>
+            <a href="https://www.facebook.com/login/">
+                <img class="facebook" src="images/facebook.png" height="33" width="33" alt="facebook">
+            </a>
+            <a href="https://www.twitter.com/login/">
+                <img class="twitter" src="images/twitter.png" height="33" width="33" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/login/">
+                <img class="instagram" src="images/instagram.png" height="33" width="33" alt="instagram">
+            </a>
+            <a href="https://www.youtube.com/login/">
+                <img class="youtube" src="images/youtube.png" height="33" width="33" alt="youtube">
+            </a>
+            <a href="https://play.google.com/store/movies?hl=en&tab=w8" >
+                <img class="google-play" src="images/google-play.png" height="33" width="33" alt="google-play">
+            </a>
+            <a href="https://www.apple.com/app-store/">
+                <img class="app-store" src="images/app-store.png" height="33" width="33" alt="app-store">
+            </a>
+        </footer>
+        <script src="js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    // JavaScript code for form validation and redirection
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector("form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = form.querySelector('input[name="username"]').value;
+            var password = form.querySelector('input[name="password"]').value;
+
+            // Check if username and password are valid
+            if (username === "admin" && password === "admin123") {
+                // Redirect to manage_inventory.html
+                window.location.href = "manage_inventory.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    });
+</script>
+    </body>
+</html>

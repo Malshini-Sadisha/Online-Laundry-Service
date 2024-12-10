@@ -1,0 +1,150 @@
+/*header*/
+.header {
+    background-color: #71F091;
+    color: white;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header img {
+    padding-top: 10px;
+    height: 100px;
+    width: auto;
+}
+
+.header button {
+    background-color: rgb(38, 38, 50);
+    color: white;
+    border: none;
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+
+.header button:hover {
+    background-color: #a8a5a5;
+    color: rgb(38, 38, 50);
+}  
+
+.header .img1 {
+    height: 40px;
+    width:40px;
+    margin-left: 50px;
+}
+
+.nav .img1{
+    padding: 0;
+    margin: 0 0 0 1em;
+    
+}
+
+/* Style for the page body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Style for the heading */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style for the form */
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Style for form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the submit button */
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Style for the submit button on hover */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the success message */
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+}
+  
+  /*Footer*/
+.footer{
+    display: flex;
+}
+
+.social {
+    margin: 1em 0em 0em 7em;
+}
+
+.contact img{
+    display: block;
+    margin: 0em 0em 0em 50em;
+}
+
+.contactInfo{
+    display: block;
+}
+
+.contact .m1{
+    padding: 0em 0em 1em 0em;
+}
+
+.contactInfo p{
+    margin: 0.5em 0em 1em 1em;
+}
+
+.contactInfo .p1{
+    padding: 0em 0em .5em 0em;
+}
+

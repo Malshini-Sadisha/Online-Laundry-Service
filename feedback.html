@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <header class="header">
+        
+        <img src="images\LOGO1.png" alt="Laundry Land">
+    
+    <div class="nav">
+        <a href="Home.html">
+            <button>Home</button>
+        </a>
+        <a href="registration.php">
+            <button>Sign up/ Log in</button>
+        </a>
+        <a href="aboutUs.html">
+            <button>About Us</button>
+        </a>
+        <a href="contact.html">
+            <button>Contact Us</button>
+        </a>
+        <a href="userProfile.php">
+            <img class="img1" src="images\user1.png" alt="Profile">
+        </a>
+    </div>
+    </header>
+    <h1>FEEDBACK</h1>
+    <form method="post" action="save_feedback.php">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="phone">Mobile Number:</label>
+        <input type="phone" name="phone" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+          
+    <hr>
+    <br>
+     <!--Footer-->
+     <footer class="footer">
+        <div class="social">
+            <img src="images/fb.png" width="70px">
+            <img src="images/insta.png" width="70px">
+            <img src="images/whtsapp.png" width="70px">
+        </div>
+        <div class="contact">
+            <img class="m1" src="images/phone.png" width="30px">
+            <img class="m2" src="images/mail.png" width="30px">
+
+        </div>
+        <div class="contactInfo">
+            <P class="p1">0112 555 555</P>
+            <p class="p2">laundryland@gmail.com</p>
+        </div>  
+    </footer>
+    
+</body>
+</html>

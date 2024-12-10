@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/homej.js"></script><!--link js file -->
+    <link rel="stylesheet" href="css/Home.css"> <!--Link css file-->
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header class="header">
+        
+            <img src="images/LOGO1.png" alt="Laundry Land">
+        
+        <div class="nav">
+            <a href="aboutUs.html">
+                <button>About US</button>
+            </a>
+            <a href="registration.php">
+                <button>Sign up/ Log in</button>
+            </a>
+            <a href="contact.html">
+                <button>Contact Us</button>
+            </a>
+            <a href="userProfile.php">
+                <img class="img1" src="images/user1.png" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <!--Main photo and order now button-->
+    <div class="container">
+        <img src="images\11mainpic.jpg" style = width:100%>
+        <button class="btn" >Order Now</button>
+    </div>
+
+    <!--Our services-->
+    <div class="services">
+        <img src="images/111.jpg" width="40%" height="800px">
+
+        <H1>OUR SERVICES</H1>
+            <table class="icons">
+                <tr class="row">
+                    <td><img src="images/washing-machine.png" width="75px" id="washing" onclick = "changepara('washing')"> </td>
+                    <td class="sp">Washing</td>
+                    <td><img src="images/sewing.png" width="75px" id="mending" onclick = "changepara('mending')"></td>
+                    <td>Mending Service</td>
+                </tr>
+                <tr class="row">
+                    <td><img src="images/delivery-truck.png" width="75px" id="deliver" onclick="changepara('deliver')"></td>
+                    <td class="sp">Pickup & delivery</td>
+                    <td><img src="images/press.png" width="75px" id="press" onclick = "changepara('press')"></td>
+                    <td>Pressing</td>
+                </tr>
+                <tr class="row">
+                    <td><img src="images/drying-machine.png" width="75px" id="dry" onclick = "changepara('dry')"></td>
+                    <td class="sp">Dry Cleaning</td>
+                    <td><img src="images/one day.png" width="75px" id="oneDay" onclick = "changepara('oneDay')"></td>
+                    <td>One Day Service</td>
+                </tr>  
+                <tr class="row">
+                    <td colspan="4"><P id="des">Our laundry service provides top-notch washing solutions for all your garments and linens.
+                        We use high-quality detergents and employ advanced techniques to ensure thorough cleaning while preserving 
+                        the fabric's integrity. Trust us to handle your laundry with care and deliver fresh, clean results every time.</P>
+                    </td>
+                </tr>     
+            </table>          
+    </div>
+    <!--Outlet page-->
+    
+    <div class="outlets">
+        <h1>OUR OUTLETS</h1>
+
+        <div class="loc">
+            <div class="r1">
+                <h4>Malabe</h4>
+                <img src="images/1-01.png">
+                <h4>Weliwita</h4>
+                <img src="images/1-02.png" >
+            </div>   
+
+            <div class="r2"> 
+                <h4>Thalawathugoda</h4>
+                <img src="images/1-03.png">
+                <h4>Koswatte</h4>
+                <img src="images/1-04.png">
+            </div> 
+
+            <div class="r3">
+            <h4>Battaramulla</h4>
+            <img src="images/1-05.png">
+            <h4>Kottawa</h4>
+            <img src="images/1-06.png">
+            </div>
+        </div>
+    </div> 
+    <hr>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="social">
+            <img src="images/fb.png" width="90px">
+            <img src="images/insta.png" width="90px">
+            <img src="images/whtsapp.png" width="90px">
+        </div>
+        <div class="contact">
+            <img class="m1" src="images/phone.png" width="30px">
+            <img class="m2" src="images/mail.png" width="30px">
+
+        </div>
+        <div class="contactInfo">
+            <P class="p1">0112 555 555</P>
+            <p class="p2">laundryland@gmail.com</p>
+        </div>  
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*background image code*/
+body{
+    display: flex;/*body will be displayed as a flexible container*/
+    justify-content: center;/*horizontally centers the flex items*/
+    align-items: center;/*vertically centers the flex items*/
+    min-height: 100vh;/*sets the minimum height of the body to 100%of the viewport*/
+    background: url("images\back_image.jpg") no-repeat;/*background image*/
+    background-size: 2600px;/*sets background size to 2600px*/
+    background-position: center;/*Positions the background image at the center of the backgroound*/
+}
+/*header code*/
+header{
+    position:fixed;/*sets the heaeder to a fixed position*/
+    top: -3%;/*positions the header 3% above its normal position*/
+    bottom: 420px;/*positions the header 420 pixels from the bottom*/
+    left: 0;
+     width: 100%;
+    padding: -3px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+/*navigation logo code*/
+.nav.logo{
+    width: 80px;
+}
+/*navigation bar first tags code*/
+.navigation a {
+    position: relative;
+    font-size: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 25px;
+}
+/*underlined bar transition time code*/
+.navigation a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+/*underlined bar length code*/
+.navigation a:hover::after{
+    transform:scaleX(1);
+}
+/*login border Code*/
+.navigation .btnLogin-popup{ 
+    width: 150px;
+   height: 60px;
+    background:transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;  
+}
+/*popup code*/
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color:#162938;
+    font-size: 25px;
+}
+/*admin login box code*/
+.wrapper{
+    position: relative;
+    width:320px;
+    height: 340px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper.active{
+    height: 520px;
+}
+.wrapper.form-box{
+    width: 100%;
+    padding: 100px;
+}
+/*close icon code*/
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size:2em ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+/*entering answers code*/
+.form-box h2{
+    font-size: 7.5em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position:relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    font-size: 1.32em;
+}
+.input-box label{
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box  input:focus~label,
+.input-box  input:valid~label{
+    top:-5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.5em;
+    color: #162938;
+    line-height: 57px;
+}
+
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+footer{
+    position: fixed;
+    bottom: 3%;
+    top: 85%;
+    width: 100%;
+    padding: 85px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #043750;
+    color: #fbfefb;
+    background-position: bottom;
+}
+.para1{
+    font-size: 10px;
+    font-family: sans-serif;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+.para2{
+    font-size: 13px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 10px;
+    top: 40%;
+}
+.facebook{
+    position: absolute;
+    right: 130px;
+    top: 51px;
+}
+.twitter 
+{
+    position: absolute;
+    right: 90px;
+    top: 51px;
+}
+    
+.instagram 
+{
+    position: absolute;
+    right: 50px;
+    top: 51px;
+}
+    
+.youtube 
+{
+    position: absolute;
+    right: 10px;
+    top: 51px;
+}
+
+.google-play 
+{
+    position: absolute;
+    right: 210px;
+    top: 51px;
+}
+    
+.app-store 
+{
+    position: absolute;
+    right: 170px;
+    top: 51px;
+}
